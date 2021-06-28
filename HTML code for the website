@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Smart Home Lighting</title>
+        <script type="text/javascript" src="https://cloud.boltiot.com/static/js/boltCommands.js"></script>
+        <script>
+        setKey('{{ApiKey}}','{{Name}}');
+        </script>
+    </head>
+    
+    <body><div class="background"><center>
+	<h1><center><u> SMART HOME LIGHTING SYSTEM </u></center></h1> 
+        <h3><center> ROOM 1 LIGHTS </center></h3> 
+        <center>
+        <button onclick="digitalWrite(0, 'HIGH');">  ON  </button>
+        <button onclick="digitalWrite(0, 'LOW');">  OFF  </button>
+        </center>
+        <br>
+	    <h3><center> ROOM 2 LIGHTS </center></h3> 
+        <center>
+        <button onclick="digitalWrite(1, 'HIGH');">  ON  </button>
+        <button onclick="digitalWrite(1, 'LOW');">  OFF  </button>
+        </center>
+        <br>
+	    <h3><center> OUTDOOR LIGHTS </center></h3> 
+        <center>
+        <button onclick="digitalWrite(2, 'HIGH');">  ON  </button>
+        <button onclick="digitalWrite(2, 'LOW');">  OFF  </button>
+        </center>
+    </div></center>
+    
+        <div><style>
+		body
+		{
+		background-position: center;
+		margin-right: 0px;
+		background:url("https://media.giphy.com/media/J4yNWuvc2afezrAnQ2/giphy.gif");
+		background-color: #1B00B4  ;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+    background-size: 100% 100%;
+		}
+  div.background
+		{  
+        background-color: #ffffff;
+        background-position: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        padding: 40px;
+        opacity: .8;
+		}   
+		
+        </style></div>
+
+    </body>
+</html>
